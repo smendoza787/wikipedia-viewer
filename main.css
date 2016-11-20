@@ -1,0 +1,127 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #45bcb6;
+}
+
+h1 {
+  font-size: 5em;
+  color: #012f34;
+  text-shadow: 1px 3px 0 #92e8e3;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button,
+input,
+#searchButton {
+  margin: 10px;
+  padding: 15px;
+  background-color: #012f34;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  flex-grow: 2;
+  background-color: rgba(0,0,0,0);
+  border: solid 1px white;
+  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+}
+
+#wikiSearchForm {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.result-box {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  margin: 15px 100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.result-box:hover {
+  background-color: rgba(255,255,255,0.75);
+  position: relative;
+  top: 2px;
+  box-shadow: 0 0 0 black;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+      font-size: 60px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  .result-box {
+    margin: 20px;
+  }
+
+  button,
+  #searchButton {
+    padding: 15px 40px;
+  }
+
+  #wikiSearchForm {
+      width: 80%;
+    }
+}
