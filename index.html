@@ -17,9 +17,11 @@
     <h1>Wikipedia Viewer</h1>
     <div class="search-field">
       <form id="wikiSearchForm">
-        <input type="text" id="wikiSearch" placeholder="Search Wikipedia..."></input><br>
-        <button id="searchButton"><i class="fa fa-search fa-3x" aria-hidden="true"></i></button>
-        <button onclick="getRandomWiki()"><i class="fa fa-random fa-3x" aria-hidden="true"></i></button>
+        <input type="text" id="wikiSearch" placeholder="Search Wikipedia..."></input>
+        <div class="buttons">
+          <button id="searchButton"><i class="fa fa-search fa-3x" aria-hidden="true"></i></button>
+          <button onclick="getRandomWiki()"><i class="fa fa-random fa-3x" aria-hidden="true"></i></button>
+        </div>
       </form>
     </div>
     <div id="results"></div>
